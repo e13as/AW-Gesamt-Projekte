@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto</title>
+</head>
+<body>
+<h1>Auto Formular</h1>
+<form th:object="${auto}" th:action="@{/message}" method="post">
+    <p>Marke: <input type="text" th:field="*{marke}"></p>
+    <p th:if="${#fields.hasErrors('marke')}" th:errors="*{marke}"></p>
+    <p>Leistung: <input type="number" th:field="*{leistung}"></p>
+    <p th:if="${#fields.hasErrors('leistung')}" th:errors="*{leistung}"></p>
+
+    <p><input type="submit"></p>
+</form>
+</body>
+</html>

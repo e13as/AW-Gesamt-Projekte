@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Liga</title>
+</head>
+<body>
+<form action="#" th:action="@{/ligaForm}" th:object="${vereinAttribut}" method="post">
+    <p>Vereinsname: <input type="text" th:field="*{vereinsName}" /></p>
+    <p th:if="${#fields.hasErrors('vereinsName')}" th:errors="*{vereinsName}"></p>
+    <p><input type="submit" value="Einen neuen Verein erstellen" />
+        <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

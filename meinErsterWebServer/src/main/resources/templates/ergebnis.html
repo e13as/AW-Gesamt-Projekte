@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ergebnis</title>
+</head>
+<body>
+<h1>Eure Einträge</h1>
+<ul>
+<li th:each="e : ${gaestebuchliste}">
+<span>Titel:  </span><a th:href="@{/{id}/detail(id=${e.id})}" th:text="${e.titel}" />
+    </li>
+</ul>
+<a href="/form"><button type="button">Neue Nachricht verfassen!</button></a>
+
+</body>
+</html>

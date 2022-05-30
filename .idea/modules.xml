@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AWAcademy/AWAcademy.iml" filepath="$PROJECT_DIR$/AWAcademy/AWAcademy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AufgabenPreStudies/Elias_Woche1/Elias_Woche1.iml" filepath="$PROJECT_DIR$/AufgabenPreStudies/Elias_Woche1/Elias_Woche1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AufgabenPreStudies/Elias_Woche2/Elias_Woche2.iml" filepath="$PROJECT_DIR$/AufgabenPreStudies/Elias_Woche2/Elias_Woche2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Udemy-Aufgaben/Udemy-Aufgaben.iml" filepath="$PROJECT_DIR$/Udemy-Aufgaben/Udemy-Aufgaben.iml" />
+    </modules>
+  </component>
+</project>

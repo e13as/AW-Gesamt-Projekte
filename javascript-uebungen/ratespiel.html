@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ratespiel</title>
+    <script type="text/javascript">
+        const loesung = Math.floor(Math.random() * 10) + 1;
+
+
+        console.log(loesung);
+
+        let nochmalSpielen = true;
+        while(nochmalSpielen) {
+            for (let i = 0; i < 3; i++) {
+
+                let tipp = parseInt(prompt("Rate mal, welche Zahl?"));
+                if (!Number.isInteger(tipp)) {
+                    alert('Eingabe muss eine Zahl sein')
+                    i--;
+                } else if (tipp < loesung) {
+                    alert('Die Zahl ist kleiner als Lösung')
+                } else if (tipp > loesung) {
+                    alert('Die Zahl ist größe als Lösung')
+                } else {
+                    alert('Gewonnen')
+                    break;
+                }
+            }
+            nochmalSpielen = confirm('nochmal spielen?');
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

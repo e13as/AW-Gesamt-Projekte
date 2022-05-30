@@ -1,0 +1,46 @@
+
+h1 {
+    color: blue;
+}
+
+span {
+    color: green;
+}
+
+.eins {
+    color: red;
+}
+
+.eins > strong {
+    color: green;
+}
+
+.eins > strong span {
+    color: red;
+}
+
+.eins.span > strong {
+    color: red;
+}
+
+.eins.zwei {
+    color: coral;
+}
+
+.eins.zwei > strong {
+    color: brown;
+}
+
+div.eins.zwei {
+    color: cyan;
+}
+
+span.drei {
+    color: purple;
+}
+
+span.vier {
+    color: orange;
+}
+
+

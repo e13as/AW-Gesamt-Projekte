@@ -1,0 +1,63 @@
+body {
+  font-size: larger;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.padded {
+  padding: 20px;
+}
+.menu {
+  background-color: aquamarine;
+}
+.menu::after {
+  content: " Mobile";
+}
+.content {
+  background-color: coral;
+  text-align: left;
+}
+.side1 {
+  background-color: darkkhaki;
+}
+.side2 {
+  background-color: deeppink;
+}
+.footer {
+  background-color: blanchedalmond;
+}
+@media all and (min-width: 600px) {
+  .menu::after {
+    content: " Tablet";
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content {
+    width: 100%;
+  }
+  .side1 {
+    flex: 1;
+  }
+  .side2 {
+    flex: 1;
+  }
+}
+@media all and (min-width: 1000px) {
+  .menu::after {
+    content: " Desktop";
+  }
+  .container {
+    flex-wrap: nowrap;
+  }
+  .side1 {
+    order: 1;
+  }
+  .side2 {
+    order: 3;
+  }
+  .content {
+    order: 2;
+    width: 60%;
+  }
+}

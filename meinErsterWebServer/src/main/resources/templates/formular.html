@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formular</title>
+</head>
+<body>
+<h1>Unser Gästebuch</h1>
+<form action="#" th:action="@{/liste}" th:object="${gaestebuch}" method="post">
+    <p>Titel: <input type="text" th:field="*{titel}" /></p>
+    <p>Name: <input type="text" th:field="*{name}" /></p>
+    <p>Nachricht: <input type="text" th:field="*{nachricht}" /></p>
+    <p><input type="submit" value="abschicken" /> <input type="reset" value="leeren" /> </p>
+</form>
+</body>
+</html>

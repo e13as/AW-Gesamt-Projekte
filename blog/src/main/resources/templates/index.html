@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+          crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="container my-2">
+    <h1> Beitragsliste </h1>
+    <a th:href="@{/newBeitragForm}" class="btn btn-primary btn-sm mb-3">Beitrag erstellen</a>
+    <table border="1" class="table table-striped table-responsive-md">
+        <thead>
+        <tr>
+            <th> Autor</th>
+            <th> Titel</th>
+            <th> Erstellungsdatum</th>
+            <th> Aktion</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="e : ${beitragsListe}">
+            <td th:text="${e.autor}"></td>
+            <td th:text="${e.titel}"></td>
+            <td th:text="${e.getDatumString()}"></td>
+            <td><a th:href="@{/updateForm/{id}(id=${e.id})}" class="btn btn-primary"> bearbeiten </a>
+                <a th:href="@{/deleteForm/{id}(id=${e.id})}" class="btn btn-danger"> löschen </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

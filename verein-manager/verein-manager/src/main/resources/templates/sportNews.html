@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+</head>
+<body>
+    <h1>Sportbeitrag erstellen</h1>
+<form action="#" th:action="@{/sportbeitraege}" th:object="${sportFormular}" method="post">
+    <p>Title: <input type="text" th:field="*{titleDTO}"/></p>
+    <p>Message: <input type="text" th:field="*{contentDTO}"/></p>
+    <p> <input type="submit" value="Send">
+        <input type="reset" value="Clear fields">
+       <a th:href="@{/}">Home</a>
+    </p>
+</form>
+</body>
+</html>

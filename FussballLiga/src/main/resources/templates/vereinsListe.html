@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelle der Liga</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><strong>Liga</strong></td>
+    </tr>
+    <tr th:each="verein:${vereine}">
+        <td >
+            <a th:href="@{/{id}/vereinsDetail(id=${verein.vereinsName})}"><span th:text="*{verein.getVereinsName()}"></span></a>
+        </td>
+    </tr>
+</table><br>
+<form action="/ligaForm">
+    <input type="submit" value="Zum Vereinsformular"/>
+</form>
+
+</body>
+</html>

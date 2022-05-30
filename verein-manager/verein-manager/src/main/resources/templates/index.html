@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Home</h1>
+<p th:text="${attrNameHtml}"></p>
+<div>
+    <p></p>
+    <a th:href="@{/sportbeitraege}">Sporteintrag erstellen</a>
+</div>
+<div th:if="${sportFormular1 != null}">
+<h3>Alle Sporteinträge</h3>
+<p th:text="'Titel: ' + ${sportFormular1.titleDTO}"></p>
+<p th:text="'Content: ' + ${sportFormular1.contentDTO}"></p>
+<a th:href="@{#top}">Zurück zum Anfang</a>
+</div>
+</body>
+</html>

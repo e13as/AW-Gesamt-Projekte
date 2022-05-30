@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1 style="color: green">Result</h1>
+<table>
+    <tr>
+        <td style="padding-right: 30px"><strong>Title</strong></td>
+        <td style="padding-right: 30px"><strong>Name</strong></td>
+        <td><strong>Message</strong></td>
+    </tr>
+    <tr>
+        <td th:text="*{beitrag.getTitel()}"/>
+        <td th:text="*{beitrag.getNachricht()}"/>
+        <td th:each="kommentar : ${beitrag.kommentare}">
+            <p th:text="${kommentar.text}"></p>
+        </td>
+    </tr>
+</table>
+<br>
+<form action="/greeting">
+    <input type="submit" value="New Message"/>
+</form>
+</body>
+</html>

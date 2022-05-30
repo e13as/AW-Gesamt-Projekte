@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ratespiel</title>
+
+  <script>
+    const loesung = Math.floor(Math.random() * 10) + 1;
+    console.log('Lösung ist '+loesung);
+
+
+
+    let x = 3;
+    while (x > 0) {
+      let tipp = parseInt(prompt("Rate mal, welche Zahl?"))
+      if (tipp === loesung) {
+        alert("Wow, Volltreffer, du hast gewonnen !");
+        break;
+      } else {
+        if (tipp < loesung){
+          alert("Leider falsch! Die Zahl ist größer!")
+        }if (tipp > loesung){
+          alert("Leider falsch! Die Zahl ist kleiner!")
+        }
+      }
+      x--;
+    }
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

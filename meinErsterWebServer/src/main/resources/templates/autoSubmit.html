@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Message</title>
+</head>
+<body>
+<p th:if="${auto.leistung > 100}">
+    Dein <span th:text="${auto.marke}"></span> ist schnell.
+</p>
+<p th:if="${auto.leistung <= 100}">
+    Dein <span th:text="${auto.marke}"></span> ist langsam.
+</p>
+</body>
+</html>

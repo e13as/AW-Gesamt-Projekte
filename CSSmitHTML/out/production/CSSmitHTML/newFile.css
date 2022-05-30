@@ -1,0 +1,36 @@
+
+
+.container {
+    background-color: blanchedalmond;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.article {
+    background-color: lightcoral;
+    margin: 20px;
+    padding: 10px;
+}
+
+.adContainer {
+    background-color: lightblue;
+    margin: 20px;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .article {
+        width: 200px;
+    }
+
+    .adContainer{
+        width: 20%;
+        flex-grow: 2;
+    }
+}

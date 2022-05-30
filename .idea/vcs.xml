@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/AWAcademy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AWElias" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AddDemoSwing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LinkzUebungMitPrakash" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PrakashGame/CarGameExample" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/addressbook" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/adressbuch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/angular-demo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/angular-shop" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/angular-shop-with-solution" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/beispiel-rest-api-client" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/beispiel-rest-api-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/beispiel-rest-api-server-gaestebuch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/brickout-game-demo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/callbacks" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/design-patterns-beispiel-loesung" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/football-heroes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hackme2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/js-aufgaben" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/linkz" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ourawesomewebsite" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ratespiel-js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rooster" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring-security-example" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/todospring" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/webblog" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/zwitscher" vcs="Git" />
+  </component>
+</project>
